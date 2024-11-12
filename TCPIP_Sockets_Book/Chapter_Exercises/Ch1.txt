@@ -1,0 +1,27 @@
+
+1. Report your IP addresses using the ifconfig command in *NIX or the ipconfig command in Windows. 
+   Identify the addresses that are IPv6.
+   * Done, not reporting the addresses for safety.
+2. Report the name of the computer on which you are working by using the hostname command.
+   * Done, not reporting the addresses for safety.
+3. Can you find the IP address of any of your directly connected routers?
+   * Yes, used the command "traceroute 8.8.8.8" (Google's address) to find it - first IP listed.
+4. Use Internet search to try and discover what happened to IPv5?
+   * Had limited space (same of IPv4 which already had concerns), desgined specifically
+     for connection-oriented streaming (not as a replacement of IPv4, not developed for
+     a standard internet protocol, just an experiment), and IPv6 was being developed 
+     to address the concerns of IPv4 - 128 bits instead of 32 which better supports
+     multicasting, increases # of IP addresses, more efficient routing, and better
+     built-in security. 
+5. Write the following IPv6 address using as few characters as possible: 
+   * 2345:0000:0000:A432:0000:0000:0000:0023 -> 2345::A432:::23
+6. Can you think of a real-life example of communication that does not fit the client-server
+   model?
+   * Talking to people face to face
+7. To how many different kinds of networks is your home connected? How many support two-way transport?
+   * "ifconfig" command shows this.
+8. IP is a best-effort protocol, requiring that information be broken down into datagrams,
+   which may be lost, duplicated, or reordered. TCP hides all of this, providing a reliable 
+   service that takes and delivers an unbroken stream of bytes. How might you go about providing 
+   TCP service on top of IP? Why would anybody use UDP when TCP is available?
+   Use UDP when you willing to sacrifice reliability for speed.
